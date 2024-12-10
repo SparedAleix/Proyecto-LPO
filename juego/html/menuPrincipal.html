@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kuchek&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La palabra Oculta</title>
+    <link rel="stylesheet" href="../css/menuPrincipal.css">
+    <link rel="shortcut icon" href="../../imagenes/Logos/Logotipo página.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="../js/menuPrincipal.js"></script>
+
+</head>
+<audio id="audio" autoplay loop>
+    <source src="../../sonidos/menu2.mp3" type="audio/mpeg">
+</audio>
+<body>
+    <div id="fondo-izquierda">
+        <div id="encabezado">
+            <h1>LA PALABRA OCULTA</h1>
+            <h2>"¿Serás capaz de adivinarla...?"</h2>
+        </div>
+        <div id="opciones-menu">
+            <label for="opcion" id="jugar">Jugar</label>
+            <label for="opcion" id="ajustes">Ajustes</label>
+            <label for="opcion" id="ranking">Mejores jugadores</label>
+        </div>
+        <div id="imagenes">
+            <img src="../../imagenes/iconos/bocina-blanco.png" id="sonido" class="icono">
+            <img src="../../imagenes/iconos/login-icon.png" id="login" class="icono">
+            <img src="../../imagenes/iconos/help-icon.png" id="ayuda" class="icono">
+        </div>
+
+        <div class="contacto">Desarrollado por: <a href="https://www.linkedin.com/in/enrique-gal-szotyori-935789287/">Enrique Gal</a> y <a href="https://www.linkedin.com/in/aleixam/">Aleix Almeda</a> </div>
+        <div class="yt"> <img src="../../imagenes/youtube/1.png" id="yt" class="icono"> <img src="../../imagenes/iconos/github.png" id="git" class="icono"> <img src="../../imagenes/iconos/videocamara (2).png" id="vc" class="icono"> </div>
+
+    </div>
+    <div id="fondo-derecha">
+
+        <div id="fondo-derecha">
+
+            <!-- Contenedor del video -->
+            <div id="videoContainer" class="hidden">
+                <iframe 
+                    id="video"
+                    width="560" 
+                    height="315" 
+                    src="" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <button id="closeVideo">Cerrar</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

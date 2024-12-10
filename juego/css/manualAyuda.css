@@ -1,0 +1,76 @@
+#fondo-izquierda{
+    display: flex;
+    flex-direction: column;
+}
+#instrucciones{
+    padding: 10%;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#instrucciones p{
+    margin-top: 10%;
+}
+#avanzar{
+    cursor: pointer;
+    height: 50%;
+    width: 20%;
+}
+#puerta{
+    z-index: 9999;
+    height: 60%;
+    width: 20%;
+}
+#retroceder{
+    visibility: hidden;
+    cursor: pointer;
+    height: 50%;
+    width: 20%;
+}
+#avanzar:hover, #retroceder:hover{
+    border-radius: 100%;
+    background-image: url("../../imagenes/iconos/file.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+}
+#puerta:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background-image: url("../../imagenes/iconos/file.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 130px;
+    content: url("../../imagenes/puertas/6.png");
+}
+#avanzar:hover{
+    content: url("../../imagenes/flechas/flecha-negra2.png");
+}
+#retroceder:hover{
+    content: url("../../imagenes/flechas/flecha-negra.png");
+}
+p{
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+#iconos{
+    gap: 0;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+   
+        position: static; /* Quita el desplazamiento */
+        color: white;
+        font-size: clamp(1.5em, 5vw, 3em); /* Tamaño de fuente responsivo */
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina relleno */
+        max-width: 90%; /* Evita desbordamiento */
+        text-align: center; /* Centra el texto horizontalmente */
+}

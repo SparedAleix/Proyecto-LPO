@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../../juego/css/formularioLogin.css">
+
+    <!-- <link rel="stylesheet" href="../../juego/css/formularioLogin2.css"> LO HE COMENTADO PORQUE HE TIRADO DEL CSS QUE TENÍA YO MONTADO. -->
+    <title>Formulario de registro</title>
+    <link rel="shortcut icon" href="../../imagenes/Logos/Logotipo página.svg">
+    <script src="../../juego/js/formularioLogin.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kuchek&display=swap" rel="stylesheet">
+</head>
+
+<audio id="audio" autoplay loop>
+    <source src="../../sonidos/menu.mp3" type="audio/mpeg">
+    <source src="../../sonidos/menu.ogg" type="audio/ogg">
+</audio>
+
+<body>
+
+    <div id="fondo-izquierda">
+        <div class="form-container">
+            <form id="loginForm">
+                <h2>Firma del errante</h2>
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input type="text" id="nombre" name="nombre"placeholder="Yeremiah" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Buzón del mensajero:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="CuervoDesplumado@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color">Color de tu alma: </label></td>
+                        <td><input type="color" id="color" name="color" required></td>
+                    </tr>
+                </table>
+                <input type="submit" id="enviar" value="Enviar">
+            </form>
+    
+            <div id="imagenes">
+                <img src="../../imagenes/flechas/flecha-blanca.png" id="login" class="icono"> <!-- TODO: Arreglar la ruta... No sé que hago con ellas xd -->
+                <img src="../../imagenes/iconos/bocina-blanco.png" id="sonido" class="icono">
+               
+            </div>
+        </div>
+    </div>
+    
+    <div id="fondo-derecha"></div>
+</body>
+
+</html>

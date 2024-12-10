@@ -1,0 +1,185 @@
+/* Bloque de estructura de la página */
+
+* {
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#cuerpo {
+    display: grid;
+    grid-template-areas: 
+        "izquierda centro derecha";
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../imagenes/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    place-items: center;
+}
+
+#lado-izquierda {
+    grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lado-central {
+    grid-area: centro;
+    background-image: url(../../imagenes/puerta.png); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#lado-central > * {
+    position: relative; 
+    z-index: 2; 
+}
+
+#lado-derecha {
+    grid-area: derecha;
+}
+
+#lado-derecha p {
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* Bloque para el ranking y susd items */
+
+#ranking-container {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    z-index: 3;
+    color: #f8f8f8;
+}
+
+#ranking-container {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); 
+}
+
+h1::selection, h2::selection, .ranking-item::selection, span::selection {
+    color: rgb(87, 13, 13);
+    background-color: rgb(255, 255, 255);
+}
+
+.ranking-titulo, .ranking-subtitulo {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    transition: box-shadow 0.1s ease-in-out; 
+    transition-delay: 0.2s; 
+}
+
+.ranking-item.primero {
+    font-size: 22px;
+    background-color: rgba(255, 223, 0, 0.2);
+}
+
+.ranking-item.segundo {
+    font-size: 20px;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+
+.ranking-item.tercero {
+    font-size: 19px;
+    background-color: rgba(205, 127, 50, 0.2);
+}
+
+.ranking-lista .ranking-item {
+    font-size: 16px;
+}
+
+.ranking-item:hover {
+box-shadow: 0px 4px 8px rgba(252, 252, 252, 0.3); 
+transition: box-shadow 0.2s ease-in-out; 
+
+}
+
+.medalla {
+    width: 60px;
+    height: 60px;
+}
+
+/* Bloque lado izquierdo: */
+
+#flecha {
+    position: fixed; 
+    width: 150px;
+    height: 120px;
+    cursor: pointer;
+    bottom: 10px; 
+    left: 10px; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 40%;
+    z-index: 3;
+}
+
+#flecha:hover {
+    cursor: pointer;
+    background-image: url(../../imagenes/iconos/file.png);
+    background-size: 120px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    content: url(../../imagenes/flechas/flecha-negra.png);
+}
+
+#bocina {
+    position: fixed; 
+    width: 120px;
+    height: 90px;
+    cursor: pointer;
+    bottom: 20px; 
+    right: 15px; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 40%;
+    z-index: 3;
+}
+
+#bocina:hover {
+    cursor: pointer;
+    background-image: url(../../imagenes/iconos/file.png);
+    background-size: 120px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    content: url(../../imagenes/iconos/bocina.png);
+}
+

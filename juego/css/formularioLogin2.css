@@ -1,0 +1,56 @@
+h2 {
+    color: blanchedalmond;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    justify-items: center;
+}
+
+label {
+    display: block;
+    color: blanchedalmond;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#enviar {
+    display: block;
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #0056b3;
+}
+
+#login, #ayuda, #sonido {
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#login:hover,
+#ayuda:hover,
+#sonido:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

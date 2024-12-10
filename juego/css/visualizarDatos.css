@@ -1,0 +1,104 @@
+*{
+    font-family: 'Lucida Handwriting', cursive;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{  
+    padding: 1px;
+    margin-left: 90px;
+    font-size: 2.5vh;
+    width: 74%;
+}
+
+#nombre{
+    width: 100px;
+    text-align: center;
+    font-size: 22px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+h1{ 
+    font-size: 35px;
+    margin-left: 9vw;
+}
+button {
+    position: relative;
+    transition-duration: 1.5s;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 2em;
+    width: 12em;
+    left: 7vw;
+    bottom: 50px;
+    transition: 1s ease-in-out; /* Cambia solo el color con una transición más rápida */
+    
+}
+
+button:hover {
+    border-radius: 30px;
+    background-color: rgb(83, 3, 3);
+    color: red;
+    animation-name: vibrar;
+    animation-duration: 0.5s; /* Controla la velocidad de vibración */
+    animation-iteration-count: infinite; /* Se repite indefinidamente mientras el cursor esté encima */
+    animation-timing-function: ease-in-out; /* Hace la vibración más suave */
+}
+
+@keyframes vibrar {
+    0% {
+        transform: translate(0, 0);
+        transform: scale(1.1,1.1);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(3px, -3px);
+        transform: scale(1.1,1.1);
+    }
+    60% {
+        transform: translate(-3px, -3px);
+    }
+    80% {
+        transform: translate(3px, 3px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+#datos-usuario{
+    font-family: 'Lucida Handwriting', cursive;
+    color: black;
+    background-image: url("../../imagenes/pngegg.png");
+    background-position: center;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 97%;
+    transition-duration: 4s;
+}
+
+#texto {
+    margin-top: 150px;
+}
+
+#datos-usuario.roto{
+    opacity: 0;
+}
+#footer{
+    gap: 0;
+    width: 35em;
+    display: flex;
+    
+}
+#footer img{
+    position: relative;
+    bottom: 1vh;
+    right: 15vh;
+    transform: rotate(20deg);
+    width: 20%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palabra Oculta</title>
+    <link rel="shortcut icon" href="../../imagenes/Logos/Logotipo página.svg">
+    <link rel="stylesheet" href="../css/juegoPrincipal.css">
+    <script src="../js/juegoPrincipal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+</head>
+<audio autoplay loop id="audioJuego">
+    <source id="rutaAudio" src="../../sonidos/musicaJuego.mp3" type="audio/mpeg">
+</audio>
+<body>
+    <div id="cuerpo">
+        <!-- Lado izquierdo -->
+        <div id="lado-izquierda">
+            <div id="abecedario">
+                <div class="letras" draggable="true">A</div>
+                <div class="letras" draggable="true">B</div>
+                <div class="letras" draggable="true">C</div>
+                <div class="letras" draggable="true">D</div>
+                <div class="letras" draggable="true">E</div>
+                <div class="letras" draggable="true">F</div>
+                <div class="letras" draggable="true">G</div>
+                <div class="letras" draggable="true">H</div>
+                <div class="letras" draggable="true">I</div>
+                <div class="letras" draggable="true">J</div>
+                <div class="letras" draggable="true">K</div>
+                <div class="letras" draggable="true">L</div>
+                <div class="letras" draggable="true">M</div>
+                <div class="letras" draggable="true">N</div>
+                <div class="letras" draggable="true">Ñ</div>
+                <div class="letras" draggable="true">O</div>
+                <div class="letras" draggable="true">P</div>
+                <div class="letras" draggable="true">Q</div>
+                <div class="letras" draggable="true">R</div>
+                <div class="letras" draggable="true">S</div>
+                <div class="letras" draggable="true">T</div>
+                <div class="letras" draggable="true">U</div>
+                <div class="letras" draggable="true">V</div>
+                <div class="letras" draggable="true">W</div>
+                <div class="letras" draggable="true">X</div>
+                <div class="letras" draggable="true">Y</div>
+                <div class="letras" draggable="true">Z</div>
+            </div>
+            <div id="iconos">
+                <!--<img src="../../imagenes/flechas/6.png" id="volver">
+                <img src="../../imagenes/iconos/bocina-blanco.png" id="sonido">-->
+            </div>
+        </div>
+
+        <!-- Lado central -->
+        <div id="lado-central">
+            <p id="frasePuerta"></p>
+            <div id="contenedores-letras"></div>
+            <div id="adivinarLetra">
+                <img src="../../imagenes/seleccion_convertida." alt="">
+                <input type="text" name="letra" id="letraInput" maxlength="1"> <br>
+                <button id="boton">GRABAR LETRA</button>
+            </div>
+            <p id="puntos">Puntos: <label for="" id="puntosNumero">2000</label></p>
+        </div>
+
+        <!-- Lado derecho -->
+        <div id="lado-derecha">
+            <p id="intentos">Intentos: </p>
+            <p>Tiempo: <label for="" id="tiempo">2:00</label></p>
+            <div id="llaves">
+            
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                <img src="../../imagenes/Llaves blancas/3.png" class="llave">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

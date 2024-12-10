@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palabra Oculta</title>
+    <link rel="shortcut icon" href="../../imagenes/Logos/Logotipo página.svg">
+    <link rel="stylesheet" href="../css/ranking.css">
+    <script src="../js/juegoPrincipal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="../js/ranking.js"></script>
+</head>
+<audio autoplay loop id="audioJuego">
+    <source id="rutaAudio" src="../../sonidos/musicaJuego.mp3" type="audio/mpeg">
+</audio>
+<body>
+    <div id="cuerpo">
+        <!-- Lado izquierdo -->
+        <div id="lado-izquierda">
+
+            <div class="volver"> 
+                <img src="../../imagenes/flechas/flecha-blanca.png" id="flecha">
+            </div>
+
+        </div>
+
+        <!-- Lado central -->
+        <div id="lado-central">
+            <div id="ranking-container">
+                <h1 class="ranking-titulo">Los errantes más rápidos</h1>
+                <div class="ranking-item primero">
+                    <span class="nombre">Yeremiah: 1700</span>
+                    <img src="../../imagenes/Medallas/Medalla_oro.png" alt="Medalla de Oro" title="Medalla de Oro" class="medalla">
+                </div>
+                <div class="ranking-item segundo">
+                    <span class="nombre">KikeO8: 1500</span>
+                    <img src="../../imagenes/Medallas/Medalla_plata.png" alt="Medalla de Plata" title="Medalla de Plata" class="medalla">
+                </div>
+                <div class="ranking-item tercero">
+                    <span class="nombre">SparedAleix: 1000</span>
+                    <img src="../../imagenes/Medallas/Medalla_bronce.png" alt="Medalla de Bronce" title="Medalla de Bronce" class="medalla">
+                </div>
+                <h2 class="ranking-subtitulo">Errantes fugaces</h2>
+                <div class="ranking-lista">
+                    <div class="ranking-item">4 - <span class="nombre">LuzNegra: 800</span></div>
+                    <div class="ranking-item">5 - <span class="nombre">Raven: 700</span></div>
+                    <div class="ranking-item">6 - <span class="nombre">CruzaUmbrales: 600</span></div>
+                    <div class="ranking-item">7 - <span class="nombre">KiryuK: 500</span></div>
+                    <div class="ranking-item">8 - <span class="nombre">Donerk: 300</span></div>
+                    <div class="ranking-item">9 - <span class="nombre">Tautor: 200</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lado derecho -->
+        <div id="lado-derecha">
+            <div class="audio"> 
+                <img src="../../imagenes/iconos/bocina-blanco.png" id="bocina">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
